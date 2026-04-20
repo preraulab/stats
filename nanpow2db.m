@@ -6,7 +6,7 @@ function ydB = nanpow2db(y)
 %   %   Calculate ratio of 2000W to 2W in decibels
 %
 %   y1 = pow2db(2000/2)     % Answer in db
-
+%
 %   Copyright 2006-2014 The MathWorks, Inc.
 % EDITED BY MJP 2/7/2020
 %
