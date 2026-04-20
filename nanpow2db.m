@@ -8,12 +8,9 @@ function ydB = nanpow2db(y)
 %   y1 = pow2db(2000/2)     % Answer in db
 %
 %   Copyright 2006-2014 The MathWorks, Inc.
-% EDITED BY MJP 2/7/2020
 %
 %   ∿∿∿  Prerau Laboratory MATLAB Codebase · sleepEEG.org  ∿∿∿
 
-%ydB = 10*log10(y);
-%ydB = db(y,'power');
 % We want to guarantee that the result is an integer
 % if y is a negative power of 10.  To do so, we force
 % some rounding of precision by adding 300-300.
@@ -21,5 +18,4 @@ function ydB = nanpow2db(y)
 ydB = (10.*log10(y)+300)-300;
 ydB(y(:)<=0) = nan;
 
-
-% [EOF]
+end
